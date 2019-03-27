@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "69c36d7986f9a350f1eb73113562b7d0",
+    "content-hash": "d5fe8eadf79c44b0007158a0dbc53627",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -639,16 +639,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.8.7",
+            "version": "v5.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "f12c7baf9ceee80b131e06a01d3221d9a2488670"
+                "reference": "3f0a5744a866ae3ae0ca84f47080501714af01ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/f12c7baf9ceee80b131e06a01d3221d9a2488670",
-                "reference": "f12c7baf9ceee80b131e06a01d3221d9a2488670",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/3f0a5744a866ae3ae0ca84f47080501714af01ba",
+                "reference": "3f0a5744a866ae3ae0ca84f47080501714af01ba",
                 "shasum": ""
             },
             "require": {
@@ -782,7 +782,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2019-03-21T16:54:38+00:00"
+            "time": "2019-03-26T17:19:10+00:00"
         },
         {
             "name": "laravel/socialite",
@@ -1792,6 +1792,55 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
+        },
+        {
+            "name": "romanzipp/laravel-twitch",
+            "version": "1.0.22",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/romanzipp/Laravel-Twitch.git",
+                "reference": "ef1c8697ba08f4d57a0e52c8736b366a1d9c1041"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/romanzipp/Laravel-Twitch/zipball/ef1c8697ba08f4d57a0e52c8736b366a1d9c1041",
+                "reference": "ef1c8697ba08f4d57a0e52c8736b366a1d9c1041",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.2@dev",
+                "laravel/framework": "^5.3",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "romanzipp\\Twitch\\Providers\\TwitchServiceProvider"
+                    ],
+                    "aliases": {
+                        "Twitch": "romanzipp\\Twitch\\Facades\\Twitch"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "romanzipp\\Twitch\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "romanzipp",
+                    "email": "ich@ich.wtf",
+                    "homepage": "https://ich.wtf"
+                }
+            ],
+            "description": "Twitch PHP Wrapper for Laravel",
+            "time": "2019-02-05T01:24:07+00:00"
         },
         {
             "name": "socialiteproviders/manager",

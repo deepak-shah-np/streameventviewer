@@ -17,8 +17,9 @@ Route::get('/', function () {
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 Route::get('login/twitch', 'Auth\LoginController@redirectToProvider')->name('twitch_redirect');
-Route::post('login/twitch/callback', 'Auth\LoginController@handleProviderCallback');
+//Route::post('login/twitch/callback', 'Auth\LoginController@handleProviderCallback');
 Route::get('login/twitch/callback', 'Auth\LoginController@handleProviderCallback');
 
-Route::get('home', 'StreamerController@home');
+Route::get('home', 'StreamerController@home')->name("home");
+Route::get('stream/{streamid}', 'StreamerController@streamDetail')->name("stream_detail");
 

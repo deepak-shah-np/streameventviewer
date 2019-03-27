@@ -21,7 +21,10 @@ class EventServiceProvider extends ServiceProvider
         \SocialiteProviders\Manager\SocialiteWasCalled::class => [
             // add your listeners (aka providers) here
             'SocialiteProviders\\Twitch\\TwitchExtendSocialite@handle',
-        ]
+        ],
+        'App\Events\FindFavStreamer' => [
+            'App\Listeners\FindFavStreamerListener',
+        ],
     ];
 
     /**
