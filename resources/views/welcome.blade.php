@@ -82,6 +82,12 @@
             <div class="content">
                 <div class="title m-b-md">
                     Stream Event Viewer
+                </div>
+
+                <div class="small">
+                    Submited by:<br>
+                    Deepak Kumar Shah<br>
+                    Email: shahkrdeepak@gmail.com
 
                 </div>
             </div>

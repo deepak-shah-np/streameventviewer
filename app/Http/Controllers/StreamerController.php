@@ -40,4 +40,19 @@ class StreamerController extends Controller
         return view('home',compact('results','query'));
 
     }
+
+    /**
+     * 10 most recent videos of a given streamer
+     * @param $streamid
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function streamDetail($streamid){
+        $pagination=[
+            "first"=>10
+        ];
+        $response = $this->twitch->getVideosByUser($streamid,$pagination);
+        $streamerName = $response->data[0]->user_name;
+        return view('stream',compact('response','streamerName'));
+
+    }
 }
