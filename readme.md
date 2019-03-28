@@ -53,15 +53,15 @@ Some major PHP packages used are listed below:
       
        Scaling (100 reqs/day to 900MM reqs/day)
       Scaling means keeping the behaviour same when load increases. The approach I would take to scale from 100 res/day to 900MM reqs/day are as follows:
-      * Use of microservices architecture: Each micorservice handling a small portion of code . ie we can separate the search and list functionality as different micorservice in out app.   
+      * Use of microservices architecture: Each micorservice handling a small portion of code . ie we can separate the search and list functionality as different micorservice in app.   
       * Use of scalable architecture . ie use of AWS scalable EC2 instance which handle the increased loads.
-      * Scalable server : Scale out and Scale up
+      * Scaling server : Scale out and Scale up
       * Scaling Database : Vertical and horizontal scaling
       * Use of NoSql Databases.
       * Caching :  use of redis or memchaced 
       * Codebase profiling
       * Denormalize tables from relational databases 
-      * Use of latest application performance management and monitoring  tool such as newrelic, pingdodm, host-tracker and many.
+      * Use of latest application performance management and monitoring  tool such as newrelic, pingdodm, host-tracker and many others.
       
       
 
