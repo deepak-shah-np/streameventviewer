@@ -29,7 +29,7 @@
                                 @endforeach
                             @else
                                 <div class="col-sm-6">
-                                    <p> Sorry, There is no record here, Please try another one streamer.</p>
+                                    <p> No Events!</p>
                                 </div>
 
                             @endif

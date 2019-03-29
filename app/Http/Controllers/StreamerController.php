@@ -51,7 +51,8 @@ class StreamerController extends Controller
             "first"=>10
         ];
         $response = $this->twitch->getVideosByUser($streamid,$pagination);
-        $streamerName = $response->data[0]->user_name;
+        $streamerDetail = $this->twitch->getUserById($streamid);
+        $streamerName = $streamerDetail->data[0]->display_name;
         return view('stream',compact('response','streamerName'));
 
     }
